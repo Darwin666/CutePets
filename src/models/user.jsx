@@ -1,10 +1,15 @@
 import service from '../services';
 
 export default {
-    namespace: 'content',
+    namespace: 'user',
 
     state: {
-        title: 'Content'
+        login: false,
+        userData: {
+            name: "",
+            email: "",
+            phone: ""
+        }
     },
 
     subscriptions: {

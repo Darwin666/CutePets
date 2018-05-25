@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, Switch } from 'dva/router';
+import { Router, Route } from 'dva/router';
 import Layout from './views';
 
 function RouterConfig({ history }) {
