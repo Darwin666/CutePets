@@ -8,6 +8,7 @@ const app = dva();
 // app.use({});
 
 // 3. Model
+app.model(require('./models/main.jsx').default);
 app.model(require('./models/user.jsx').default);
 
 // 4. Router

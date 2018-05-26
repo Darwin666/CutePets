@@ -1,0 +1,15 @@
+.header {
+    background-color: white;
+}
+.row-layout {
+    text-align: center;
+    .row-layout-content {
+        max-width: 1440px;
+        min-width: 1024px;
+        // background-color: green;
+    }
+}
+.userArea {
+    text-align: left;
+    padding-left: 20px;
+}
