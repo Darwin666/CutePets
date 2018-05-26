@@ -5,7 +5,8 @@ export default {
     namespace: 'main',
 
     state: {
-        currentTab: ""
+        currentTab: "",
+        login: false,
     },
 
     subscriptions: {
@@ -26,8 +27,10 @@ export default {
             return cloneState;
         },
 
-        saveB(state, action) {
-            return {};
+        saveLogin(state, {type, data}) {
+            let cloneState = deepClone(state);
+            cloneState.login = data
+            return cloneState;
         }
     },
 

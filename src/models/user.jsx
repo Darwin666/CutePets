@@ -4,7 +4,6 @@ export default {
     namespace: 'user',
 
     state: {
-        login: false,
         userData: {
             name: "",
             email: "",

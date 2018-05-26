@@ -2,6 +2,8 @@
 import React from 'react';
 import {connect} from 'dva';
 
+import './index.scss';
+
 class Home extends React.Component {
     componentDidMount() {
         this.props.dispatch({type: 'main/saveCurrentTab', data: "home"});

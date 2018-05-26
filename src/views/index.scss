@@ -1,15 +1,54 @@
 .header {
     background-color: white;
-}
-.row-layout {
-    text-align: center;
-    .row-layout-content {
-        max-width: 1440px;
-        min-width: 1024px;
-        // background-color: green;
+    box-shadow: 0 2px 8px #f0f1f2;
+    position: relative;
+    z-index: 10;
+    min-width: 1208px;
+    .img1 {
+        height: 32px;
+        margin-right: 16px;
+    }
+    .img2 {
+        height: 16px;
+    }
+    .search-box {
+        border-left: 1px solid #ebedf0;
+        float: left;
+        line-height: 22px;
+        padding-left: 16px;
+        margin: 22px auto 0;
+        input {
+            margin-top: -5px;
+            width: 200px;
+            border: 0;
+            box-shadow: none;
+        }
+    }
+    .menu {
+        font-weight: bolder;
+        border-bottom: none;
+        float: left;
+        line-height: 64px;
+        .item {
+            border-bottom: none;
+        }
+    }
+    .userBox {
+        font-weight: bolder;
+        float: right;
+        line-height: 32px;
+        margin-top: 16px;
+        .avatarBox {
+            cursor: pointer;
+        }
     }
 }
-.userArea {
-    text-align: left;
-    padding-left: 20px;
+.content {
+    background-color: white;
+}
+.row-layout {
+    max-width: 1208px;
+    min-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
