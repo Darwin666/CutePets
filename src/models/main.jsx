@@ -6,18 +6,9 @@ export default {
 
     state: {
         currentTab: "",
-        login: false,
-    },
-
-    subscriptions: {
-        setup({ dispatch, history }) {  // eslint-disable-line
-        },
-    },
-
-    effects: {
-        *fetch({ payload }, { call, put }) {  // eslint-disable-line
-        yield put({ type: 'save' });
-        },
+        loginFlag: false,
+        signUpVisible: false,
+        signInVisible: false,
     },
 
     reducers: {
@@ -27,11 +18,34 @@ export default {
             return cloneState;
         },
 
-        saveLogin(state, {type, data}) {
+        saveLoginFlag(state, {type, data}) {
             let cloneState = deepClone(state);
-            cloneState.login = data
+            cloneState.loginFlag = data
             return cloneState;
-        }
+        },
+
+        saveSignUpVisible(state, {type, data}) {
+            let cloneState = deepClone(state);
+            cloneState.signUpVisible = data
+            return cloneState;
+        },
+
+        saveSignInVisible(state, {type, data}) {
+            let cloneState = deepClone(state);
+            cloneState.signInVisible = data
+            return cloneState;
+        },
+    },
+
+    effects: {
+        *fetch({ payload }, { call, put }) {  // eslint-disable-line
+        yield put({ type: 'save' });
+        },
+    },
+
+    subscriptions: {
+        setup({ dispatch, history }) {  // eslint-disable-line
+        },
     },
 
 }

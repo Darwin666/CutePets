@@ -1,10 +1,10 @@
 import React from 'react';
 import { Router, Route } from 'dva/router';
-import Layout from './views';
+import Main from './views';
 
 function RouterConfig({ history }) {
     return (<Router history={history}>
-        <Route path="/" component={Layout} />
+        <Route path="/" component={Main} />
     </Router>);
 }
 
